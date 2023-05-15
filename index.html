@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.0/html2canvas.min.js"></script>
+
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="canvas-container">
+            <canvas id="myCanvas" width="1200" height="590" style="background-color:antiquewhite;"></canvas>
+        </div>
+
+        <div id="table-container">
+            <button onclick="tomarCapturaYDescargar()" style="text-align: center; justify-content: center; margin-left: 30%; margin-top: 60%;">Descargar</button>
+            <h1 style="text-align: center; padding-top: 10%;">Color Actual: <span style="border: 1px solid black;" id="color_sample">█</span></h1>
+            <table style="width: 110px; color: black; font-size:larger; text-align: center; margin-top: 70px; ">
+                <tr>
+                    <td id="option_1" style="background-color: yellow ;opacity: 0.8;">1</td>
+                    <td id="option_2" style="background-color: red;">2</td>
+                </tr>
+                <tr>
+                    <td id="option_3" style="background-color: blue;color: white;">3</td>
+                    <td id="option_4" style="background-color: green;">4</td>
+                </tr>
+                <tr>
+                    <td id="option_5" style="background-color: black;color: white;">5</td>
+                    <td id="option_6" style="background-color: pink;">6</td>
+                </tr>
+                <tr>
+                    <td id="option_7" style="background-color: orange;">7</td>
+                    <td id="option_8" style="background-color: white;">8</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
